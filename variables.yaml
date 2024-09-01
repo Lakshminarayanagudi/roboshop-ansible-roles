@@ -1,2 +1,3 @@
 MONGODB_HOST: mongodb.daws45.online # submit your host
 REDIS_HOST: redis.daws45.online
+CATALOGUE_HOST: catalogue.daws45.online
