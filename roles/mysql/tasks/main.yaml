@@ -1,4 +1,3 @@
-tasks:
 - name: disable current version of mysql
   ansible.builtin.command: dnf module disable mysql -y
 
