@@ -1,0 +1,13 @@
+- name: install go
+  ansible.bultin.dnf:
+    name: golang
+    state: present
+
+- name: buld go aplication
+  ansible.bultin.command: "{{item}}"
+  loop:
+  - go mod init dispatch
+  - go get
+  - go buld
+  args:
+    chdir: /app
