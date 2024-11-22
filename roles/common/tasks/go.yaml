@@ -3,8 +3,8 @@
     name: golang
     state: present
 
-- name: buld go aplication
-  ansible.bultin.command: "{{item}}"
+- name: build go aplication
+  ansible.builtin.command: "{{item}}"
   loop:
   - go mod init dispatch
   - go get
