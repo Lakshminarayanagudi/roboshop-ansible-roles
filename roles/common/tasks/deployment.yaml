@@ -1,0 +1,13 @@
+- name: "strop {{component}}"
+  tags:
+  - deployment
+  ansible.builtin.service:
+    name: "{{component}}"
+    state: stopped
+
+- name: Recursively remove app directeory
+  tags:
+  - deployment
+  ansible.bultin.file:
+    path: "/app/*"
+    state: absent
